@@ -237,12 +237,12 @@ pub(crate) fn sanitize_id(input: &str) -> String {
 }
 
 fn default_codex_dir() -> Result<PathBuf> {
-    if let Ok(value) = std::env::var("CODEX_HOME") {
+    if let Ok(value) = std::env::var("CLAUDE_CONFIG_DIR") {
         if let Some(path) = codex_dir_from_text(&value)? {
             return Ok(path);
         }
     }
-    Ok(home_dir()?.join(".codex"))
+    Ok(home_dir()?.join(".claude"))
 }
 
 fn codex_dir_from_text(value: &str) -> Result<Option<PathBuf>> {

@@ -18,10 +18,10 @@ pub(crate) const INSTRUCTION_SEAGULL_FILENAME: &str = "海鸥3.0破甲.md";
 pub(crate) const INSTRUCTION_SEAGULL_CONTENT: &str =
     include_str!("../../../../examples/海鸥3.0破甲.md");
 
-pub(crate) const AGENTS_FILENAME: &str = "AGENTS.md";
-pub(crate) const AGENTS_MANAGED_BEGIN: &str = "<!-- CODEX-X:INSTRUCTIONS:BEGIN -->";
-pub(crate) const AGENTS_MANAGED_END: &str = "<!-- CODEX-X:INSTRUCTIONS:END -->";
-pub(crate) const AGENTS_TEMPLATE_PREFIX: &str = "<!-- CODEX-X:TEMPLATE:";
+pub(crate) const AGENTS_FILENAME: &str = "CLAUDE.md";
+pub(crate) const AGENTS_MANAGED_BEGIN: &str = "<!-- CLAUDE-X:INSTRUCTIONS:BEGIN -->";
+pub(crate) const AGENTS_MANAGED_END: &str = "<!-- CLAUDE-X:INSTRUCTIONS:END -->";
+pub(crate) const AGENTS_TEMPLATE_PREFIX: &str = "<!-- CLAUDE-X:TEMPLATE:";
 pub(crate) const JSDELIVR_EXAMPLES_API: &str =
     "https://data.jsdelivr.com/v1/packages/gh/yynxxxxx/Codex-X@main?structure=flat";
 pub(crate) const JSDELIVR_EXAMPLES_BASE: &str =
